@@ -1,0 +1,158 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+  font-family: 'Pretendard-Regular';
+  src: url('https://fastly.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff') format('woff');
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Pretendard-Medium';
+  src: url('https://fastly.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Medium.woff') format('woff');
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Pretendard-SemiBold';
+  src: url('https://fastly.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-SemiBold.woff') format('woff');
+  font-weight: 600;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Pretendard-Bold';
+  src: url('https://fastly.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Bold.woff') format('woff');
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Pretendard-ExtraBold';
+  src: url('https://fastly.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-ExtraBold.woff') format('woff');
+  font-weight: 800;
+  font-style: normal;
+}
+
+.weight-400 {
+  font-family: Pretendard-Regular, sans-serif;
+}
+
+.weight-500 {
+  font-family: Pretendard-Medium, sans-serif;
+}
+
+.weight-600 {
+  font-family: Pretendard-SemiBold, sans-serif;
+}
+
+.weight-700 {
+  font-family: Pretendard-Bold, sans-serif;
+}
+
+.weight-800 {
+  font-family: Pretendard-ExtraBold, sans-serif;
+}
+
+* {
+  font-family: Pretendard-Medium, sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing : border-box;
+}
+
+.react-datepicker-wrapper input:focus {
+  outline: none;
+  box-shadow: none;
+}
+
+@keyframes mybox0{
+  from{ width: 0px;filter: brightness(60%);}
+  to{ width: 255px;filter: brightness(80%);}
+}
+@keyframes mybox1{
+  from{ width:255px;filter: brightness(80%);}
+  to{ width:320px;filter: brightness(100%);}
+}
+@keyframes mybox2{
+  from{ width:320px;filter: brightness(100%);}
+  to{ width:255px;filter: brightness(80%);}
+}
+@keyframes mybox3{
+  from{ width: 255px;}
+  to{ width: 0px;}
+}
+@keyframes leffect {
+     from{ padding-left:0px;}
+     to{ padding-left:255px;}
+}
+
+.l-effect{
+     animation-name: leffect;
+     animation-duration: 0.5s;
+     animation-direction: alternate; /*반대방향으로*/ 
+     animation-iteration-count: 1; /*무한반복*/
+     animation-delay: 0s;
+     animation-timing-function: linear;
+}
+.box{
+  width: 255px;
+  height: auto;
+}
+.box0{
+  width: 0px;
+  height: auto;
+}
+.box0.effect0 {
+  animation-name: mybox0;
+  animation-duration: 0.5s;
+  animation-direction: alternate; /*반대방향으로*/ 
+  animation-iteration-count: 1; /*무한반복*/
+  animation-delay: 0s;
+  animation-timing-function: linear;
+}
+.box1{
+  width: 255px;
+  height: auto;
+  filter: brightness(80%);
+}
+.box1.effect1 {
+  animation-name: mybox1;
+  animation-duration: 0.5s;
+  animation-direction: alternate; /*반대방향으로*/ 
+  animation-iteration-count: 1; /*무한반복*/
+  animation-delay: 0s;
+  animation-timing-function: linear;
+}
+.box2{
+  width: 320px;
+  height: auto;
+}
+.box2.effect2 {
+  animation-name: mybox2;
+  animation-duration: 0.5s;
+  animation-direction: alternate; /*반대방향으로*/ 
+  animation-iteration-count: 1; /*무한반복*/
+  animation-delay: 0s;
+  animation-timing-function: linear;
+}
+.box3{
+  width: 255px;
+  height: auto;
+  filter: brightness(80%);
+}
+.box3.effect3 {
+  animation-name: mybox3;
+  animation-duration: 0.5s;
+  animation-direction: alternate; /*반대방향으로*/ 
+  animation-iteration-count: 1; /*무한반복*/
+  animation-delay: 0s;
+  animation-timing-function: linear;
+}
+.box4{
+  width: 0px;
+  height: auto;
+}
